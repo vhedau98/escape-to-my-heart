@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Segoe UI', cursive;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b4005a;
+}
+
+.room {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.note {
+  background: #fff0f6;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid #ff8acb;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #ff8acb;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff5fa2;
+}
+
+#msg {
+  margin-top: 15px;
+}
+style.css
